@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(14, 19, 35, 1);
+}
+.container {
+  display: grid;
+  grid-template-columns: 255px 3fr;
+  gap: 30px;
+  grid-template-rows: max-content;
+  /* padding: 263px 168px; */
+  background: rgba(14, 19, 35, 1);
+}
+.first-card {
+  height: 518px;
+  width: 255px;
+  display: grid;
+  background: rgba(28, 32, 75, 1);
+  font-family: Rubik, sans-serif;
+  border-radius: 15px;
+}
+img {
+  margin-bottom: 43px;
+}
+.child {
+  padding: 37px 80px 80px 32px;
+  background: rgba(87, 71, 234, 1);
+  border-radius: 15px;
+}
+.text {
+  width: 140px;
+}
+.text p {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgba(187, 192, 255, 1);
+}
+.text h3 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 47px;
+  color: rgba(255, 255, 255, 1);
+}
+.dwm {
+  display: grid;
+  font-weight: 400;
+  padding: 32px 26px;
+  font-size: 18px;
+  color: rgba(112, 119, 201, 0.685);
+  grid-row-gap: 10px;
+}
+.total {
+  display: grid;
+  grid-template-columns: 255px 255px 255px;
+  grid-template-rows: 240px;
+  gap: 30px;
+  position: relative;
+  font-family: Rubik, sans-serif;
+  grid-template-areas:
+    "work play study "
+    "exercise social self-care";
+}
+.work {
+  grid-area: work;
+}
+.background {
+  border: none;
+  border-radius: 15px;
+  width: 255px;
+  height: 160px;
+  position: relative;
+}
+.time-tracks {
+  position: absolute;
+  top: 40px;
+  width: 255px;
+  height: 199px;
+  border-radius: 10px;
+  background-color: rgba(28, 32, 75, 1);
+  padding: 29px 30px;
+  height: 199px;
+  border: none;
+}
+.first {
+  width: 190px;
+  position: relative;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  margin-bottom: 25px;
+}
+.time-tracks > h2 {
+  position: relative;
+  width: 144px;
+  font-weight: 100;
+  font-size: 56px;
+  color: rgba(255, 255, 255, 1);
+  z-index: 1;
+  margin-bottom: 8px;
+}
+.second {
+  position: relative;
+  font-weight: 10;
+  font-size: 15px;
+  color: rgba(187, 191, 255, 0.589);
+  z-index: 1;
+  margin-bottom: 32px;
+}
+.imgs {
+  width: 78px;
+  height: 78px;
+  /* margin-left: 158px; */
+  overflow: hidden;
+  position: absolute;
+  /* top: -5px; */
+  left:158px
+}
+.play {
+  grid-area: play;
+  overflow: hidden;
+}
+.study {
+  grid-area: study;
+}
+.exercise {
+  grid-area: exercise;
+}
+.social {
+  grid-area: social;
+}
+.self-care {
+  grid-area: self-care;
+}
+#idwork {
+  left: 0px;
+}
+#idplay {
+  left: 285px;
+}
+#idstudy {
+  left: 570px;
+}
+#idexe {
+  top: 320px;
+  left: 0px;
+}
+#idsocial {
+  top: 320px;
+  left: 285px;
+}
+#idself {
+  top: 320px;
+  left: 570px;
+}
